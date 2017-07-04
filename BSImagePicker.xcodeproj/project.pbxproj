@@ -40,6 +40,8 @@
 		D2661BEC1F0B8A9C00A17D0F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2661BCB1F0B8A9C00A17D0F /* PhotoCell.swift */; };
 		D2661BED1F0B8A9C00A17D0F /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2661BCC1F0B8A9C00A17D0F /* SelectionView.swift */; };
 		D2661BEE1F0B8A9C00A17D0F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2661BCD1F0B8A9C00A17D0F /* Info.plist */; };
+		D2661BF21F0B91D900A17D0F /* BSGridCollectionViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2661BF01F0B91D900A17D0F /* BSGridCollectionViewLayout.framework */; };
+		D2661BF31F0B91D900A17D0F /* UIImageViewModeScaleAspect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2661BF11F0B91D900A17D0F /* UIImageViewModeScaleAspect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,8 @@
 		D2661BCB1F0B8A9C00A17D0F /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		D2661BCC1F0B8A9C00A17D0F /* SelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
 		D2661BCD1F0B8A9C00A17D0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Pod/Info.plist; sourceTree = SOURCE_ROOT; };
+		D2661BF01F0B91D900A17D0F /* BSGridCollectionViewLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BSGridCollectionViewLayout.framework; path = Carthage/Build/iOS/BSGridCollectionViewLayout.framework; sourceTree = "<group>"; };
+		D2661BF11F0B91D900A17D0F /* UIImageViewModeScaleAspect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIImageViewModeScaleAspect.framework; path = Carthage/Build/iOS/UIImageViewModeScaleAspect.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2661BF21F0B91D900A17D0F /* BSGridCollectionViewLayout.framework in Frameworks */,
+				D2661BF31F0B91D900A17D0F /* UIImageViewModeScaleAspect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +101,7 @@
 			children = (
 				D2661B9D1F0B8A3B00A17D0F /* BSImagePicker */,
 				D2661B9C1F0B8A3B00A17D0F /* Products */,
+				D2661BEF1F0B91D900A17D0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,6 +209,15 @@
 				D2661BCC1F0B8A9C00A17D0F /* SelectionView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D2661BEF1F0B91D900A17D0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2661BF01F0B91D900A17D0F /* BSGridCollectionViewLayout.framework */,
+				D2661BF11F0B91D900A17D0F /* UIImageViewModeScaleAspect.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,6 +446,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BSImagePicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -448,6 +468,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BSImagePicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
